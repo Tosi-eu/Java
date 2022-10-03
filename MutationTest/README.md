@@ -14,7 +14,7 @@ Program made for learning mutation test
  
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
- # Where do I have to put the files?
+ # Where the files must be located?
  
   Ientifier.java: Must to be in src/main/java
   IdentifierTestCase.java: Must to be in src/test/java
