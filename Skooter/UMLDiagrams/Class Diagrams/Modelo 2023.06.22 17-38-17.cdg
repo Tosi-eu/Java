@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Modelo">
+  <ClassDiagramComponents>
+    <Class name="Arrow" package="Modelo" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="dir" type="int" visibility="package"/>
+        <Field name="eElementos" type="ArrayList&lt;Elemento&gt;" visibility="package"/>
+        <Field name="cControle" type="ControleDeJogo" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+          <Argument type="int" name="dire"/>
+          <Argument type="ArrayList&lt;Elemento&gt;" name="elementos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="empurrar" returnType="boolean" visibility="public"/>
+        <Method name="autoDesenho" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Elemento" package="Modelo" visibility="public" isAbstract="true" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="iImage" type="ImageIcon" visibility="protected"/>
+        <Field name="pPosicao" type="Posicao" visibility="protected"/>
+        <Field name="bTransponivel" type="boolean" visibility="protected"/>
+        <Field name="bMortal" type="boolean" visibility="protected"/>
+        <Field name="bColetavel" type="boolean" visibility="protected"/>
+        <Field name="bMovel" type="boolean" visibility="protected"/>
+        <Field name="bQuebravel" type="boolean" visibility="protected"/>
+        <Field name="seta" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="String" name="sNomeImagePNG"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPosicao" returnType="Posicao" visibility="public"/>
+        <Method name="isbTransponivel" returnType="boolean" visibility="public"/>
+        <Method name="isbMortal" returnType="boolean" visibility="public"/>
+        <Method name="isbColetavel" returnType="boolean" visibility="public"/>
+        <Method name="isbMovable" returnType="boolean" visibility="public"/>
+        <Method name="isbBreakable" returnType="boolean" visibility="public"/>
+        <Method name="isSeta" returnType="boolean" visibility="public"/>
+        <Method name="setbTransponivel" returnType="void" visibility="public">
+          <Argument type="boolean" name="bTransponivel"/>
+        </Method>
+        <Method name="setPosicao" returnType="boolean" visibility="public">
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+        </Method>
+        <Method name="setPosicao" returnType="boolean" visibility="public"/>
+        <Method name="moveUp" returnType="boolean" visibility="public"/>
+        <Method name="moveDown" returnType="boolean" visibility="public"/>
+        <Method name="moveRight" returnType="boolean" visibility="public"/>
+        <Method name="moveLeft" returnType="boolean" visibility="public"/>
+        <Method name="voltaAUltimaPosicao" returnType="void" visibility="public"/>
+        <Method name="autoDesenho" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="Modelo" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Parede" package="Modelo" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+          <Argument type="boolean" name="breakbl"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ParedeAtravessavel" package="Modelo" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+          <Argument type="boolean" name="vermelha"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Prizes" package="Modelo" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Robo" package="Modelo" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="bRight" type="boolean" visibility="private"/>
+        <Field name="foiPraCima" type="boolean" visibility="private"/>
+        <Field name="foiPraBaixo" type="boolean" visibility="private"/>
+        <Field name="foiPraEsquerda" type="boolean" visibility="private"/>
+        <Field name="foiPraDireita" type="boolean" visibility="private"/>
+        <Field name="cControle" type="ControleDeJogo" visibility="private" isFinal="true"/>
+        <Field name="eElementos" type="ArrayList&lt;Elemento&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementinhos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="autoDesenho" returnType="void" visibility="public"/>
+        <Method name="voltaAUltimaPosicao" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Skooter" package="Modelo" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="sNomeImagePNG"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="voltaAUltimaPosicao" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Modelo.Skooter" target="Modelo.Elemento"/>
+    <IsRelation name="is" source="Modelo.ParedeAtravessavel" target="Modelo.Elemento"/>
+    <IsRelation name="is" source="Modelo.Prizes" target="Modelo.Elemento"/>
+    <IsRelation name="is" source="Modelo.Robo" target="Modelo.Elemento"/>
+    <HasRelation name="eElementos" source="Modelo.Robo" target="Modelo.Elemento" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Elemento&gt;"/>
+    <IsRelation name="is" source="Modelo.Arrow" target="Modelo.Elemento"/>
+    <HasRelation name="eElementos" source="Modelo.Arrow" target="Modelo.Elemento" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Elemento&gt;"/>
+    <IsRelation name="is" source="Modelo.Parede" target="Modelo.Elemento"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

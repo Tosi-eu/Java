@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Auxiliar">
+  <ClassDiagramComponents>
+    <Class name="Cenario" package="Auxiliar" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="tCenarioOndeSeDesenha" type="Tela" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setCenario" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Tela" name="umTCenarioOndeDesenhar"/>
+        </Method>
+        <Method name="getTelaDoJogo" returnType="Tela" visibility="public" isStatic="true"/>
+        <Method name="desenhar" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ImageIcon" name="iImage"/>
+          <Argument type="int" name="iColuna"/>
+          <Argument type="int" name="iLinha"/>
+        </Method>
+        <Method name="getGraphicsDaTela" returnType="Graphics" visibility="private" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Consts" package="Auxiliar" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="CELL_SIDE" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="RES" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="FRAME_INTERVAL" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="TIMER_DISPARO" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="PATH" type="String" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Posicao" package="Auxiliar" visibility="public" isFinal="true" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="linha" type="int" visibility="private"/>
+        <Field name="coluna" type="int" visibility="private"/>
+        <Field name="linhaAnterior" type="int" visibility="private"/>
+        <Field name="colunaAnterior" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setPosicao" returnType="boolean" visibility="public">
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+        </Method>
+        <Method name="getLinha" returnType="int" visibility="public"/>
+        <Method name="getColuna" returnType="int" visibility="public"/>
+        <Method name="volta" returnType="boolean" visibility="public"/>
+        <Method name="getLinhaAnterior" returnType="int" visibility="public"/>
+        <Method name="getColunaAnterior" returnType="int" visibility="public"/>
+        <Method name="estaNaMesmaPosicao" returnType="boolean" visibility="public">
+          <Argument type="Posicao" name="posicao"/>
+        </Method>
+        <Method name="copia" returnType="boolean" visibility="public">
+          <Argument type="Posicao" name="posicao"/>
+        </Method>
+        <Method name="moveUp" returnType="boolean" visibility="public"/>
+        <Method name="moveDown" returnType="boolean" visibility="public"/>
+        <Method name="moveRight" returnType="boolean" visibility="public"/>
+        <Method name="moveLeft" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Auxiliar.Posicao" target="Auxiliar.Posicao" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

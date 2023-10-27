@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Controler">
+  <ClassDiagramComponents>
+    <Class name="ControleDeJogo" package="Controler" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="desenhaTudo" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+        </Method>
+        <Method name="processaTudo" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+        </Method>
+        <Method name="ehPosicaoValida" returnType="boolean" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+          <Argument type="Posicao" name="p"/>
+        </Method>
+        <Method name="ehPosicaoValidaRobos" returnType="boolean" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+          <Argument type="Posicao" name="p"/>
+        </Method>
+        <Method name="ehPosicaoMortal" returnType="boolean" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+          <Argument type="Posicao" name="p"/>
+        </Method>
+        <Method name="CondicaoDeVitoria" returnType="boolean" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+          <Argument type="Posicao" name="p"/>
+        </Method>
+        <Method name="ehPosicaoValidaArrows" returnType="boolean" visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="e"/>
+          <Argument type="Posicao" name="p"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tela" package="Controler" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="hSkooter" type="Skooter" visibility="private"/>
+        <Field name="eElementos" type="ArrayList&lt;Elemento&gt;" visibility="private"/>
+        <Field name="cControle" type="ControleDeJogo" visibility="private"/>
+        <Field name="g2" type="Graphics" visibility="private"/>
+        <Field name="Backgroundfase" type="String" visibility="public"/>
+        <Field name="vidas" type="int" visibility="private"/>
+        <Field name="fase" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Tela" returnType="void" visibility="public">
+          <Argument type="int" name="faseAtual"/>
+        </Method>
+        <Method name="addElemento" returnType="void" visibility="public">
+          <Argument type="Elemento" name="umElemento"/>
+        </Method>
+        <Method name="removeElemento" returnType="void" visibility="public">
+          <Argument type="Elemento" name="umElemento"/>
+        </Method>
+        <Method name="getGraphicsBuffer" returnType="Graphics" visibility="public"/>
+        <Method name="paint" returnType="void" visibility="public">
+          <Argument type="Graphics" name="grafico"/>
+        </Method>
+        <Method name="go" returnType="void" visibility="public"/>
+        <Method name="keyPressed" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="mousePressed" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="lerSave" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="escreverSave" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="int" name="novoValor"/>
+        </Method>
+        <Method name="initComponents" returnType="void" visibility="private"/>
+        <Method name="mouseMoved" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="mouseClicked" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="mouseReleased" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="mouseEntered" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="mouseExited" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="mouseDragged" returnType="void" visibility="public">
+          <Argument type="MouseEvent" name="e"/>
+        </Method>
+        <Method name="keyTyped" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="keyReleased" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="cControle" source="Controler.Tela" target="Controler.ControleDeJogo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

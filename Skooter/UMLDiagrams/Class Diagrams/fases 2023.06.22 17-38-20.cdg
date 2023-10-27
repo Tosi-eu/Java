@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="fases">
+  <ClassDiagramComponents>
+    <Class name="fase1" package="fases" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+          <Argument type="Skooter" name="hSkooter"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Inimigos" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Premios" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Paredes" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="inserirParedeFurada" returnType="void" visibility="private">
+          <Argument type="String" name="imagem"/>
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="ParedesFuradas" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="fase2" package="fases" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+          <Argument type="Skooter" name="hSkooter"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Inimigos" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Premios" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Paredes" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="insereSetas" returnType="void" visibility="private">
+          <Argument type="String" name="imagem"/>
+          <Argument type="int" name="dire"/>
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Arrows" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="fase3" package="fases" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+          <Argument type="Skooter" name="hSkooter"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Inimigos" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Premios" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="ParedesAtravessaveis" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="fase4" package="fases" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+          <Argument type="Skooter" name="hSkooter"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Inimigos" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Premios" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="inserirParede" returnType="void" visibility="private">
+          <Argument type="String" name="imagem"/>
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Paredes" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="fase5" package="fases" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+          <Argument type="Skooter" name="hSkooter"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Inimigos" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Premios" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Paredes" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="insereSetas" returnType="void" visibility="private">
+          <Argument type="String" name="imagem"/>
+          <Argument type="int" name="dire"/>
+          <Argument type="int" name="linha"/>
+          <Argument type="int" name="coluna"/>
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+        <Method name="Arrows" returnType="void" visibility="private">
+          <Argument type="ArrayList&lt;Elemento&gt;" name="eElementos"/>
+          <Argument type="Tela" name="tTela"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

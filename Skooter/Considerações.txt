@@ -1,0 +1,9 @@
+Grupo:
+Pedro Henrique Salmaze - 13783714
+Guilherme Henrique Galdini Tosi - 11781587
+
+O UML da pasta "UML_Skooter "foi feito usando o plugin easyUML do NetBeans
+Os UML em .png foram feitos usando a ferramenta StarUML
+
+O jogo salva a fase atual em um arquivo chamado "save", para 
+retornar a primeira fase é necessário excluir esse arquivo
