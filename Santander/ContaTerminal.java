@@ -1,3 +1,4 @@
+package Santander;
 import java.util.Scanner;
 
 public class ContaTerminal {
